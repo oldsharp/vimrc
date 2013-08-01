@@ -159,4 +159,4 @@ endif
 set listchars=tab:>-,trail:.,nbsp:%,extends:>,precedes:<
 set list
 
-:cscope add ./cscope.out
+":cscope add ./cscope.out
