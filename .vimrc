@@ -43,7 +43,7 @@ syntax enable
 filetype on
 set wrap
 
-set cc=80
+autocmd FileType python set cc=80
 set foldmethod=manual
 
 set encoding=UTF-8
