@@ -24,10 +24,10 @@ set noswapfile
 
 " Use :retab to replace tabs to spaces.
 set smarttab
-set tabstop=8
-set softtabstop=8
+set tabstop=4
+set softtabstop=4
 set expandtab
-set shiftwidth=8
+set shiftwidth=4
 
 set t_Co=256
 " Switch syntax highlighting on, when the terminal has colors
