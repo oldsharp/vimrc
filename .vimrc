@@ -1,4 +1,8 @@
+" Use :source $MYVIMRC to reload .vimrc file.
+
 set nocompatible
+
+set helplang=cn
 
 set number
 set showcmd     " Show (partial) command in status line.
@@ -57,6 +61,9 @@ set noshowmode
 set cursorline
 au InsertEnter * set nocursorline
 au InsertLeave * set cursorline
+set cursorcolumn
+au InsertEnter * set nocursorcolumn
+au InsertLeave * set cursorcolumn
 
 if has("autocmd")
 
