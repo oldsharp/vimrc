@@ -62,9 +62,9 @@ set noshowmode
 set cursorline
 au InsertEnter * set nocursorline
 au InsertLeave * set cursorline
-set cursorcolumn
-au InsertEnter * set nocursorcolumn
-au InsertLeave * set cursorcolumn
+"set cursorcolumn
+"au InsertEnter * set nocursorcolumn
+"au InsertLeave * set cursorcolumn
 
 if has("autocmd")
 
