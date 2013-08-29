@@ -50,6 +50,7 @@ set wrap
 autocmd FileType python set cc=80
 set foldmethod=manual
 
+" Use ++enc=encoding to cover 'fileencoding' when opening a file
 set encoding=UTF-8
 set fileencodings=ucs-bom,UTF-8,cp936,GBK,GB18030,BIG5,euc-jp,euc-kr,latin1
 set fileformats=unix,dos,mac
