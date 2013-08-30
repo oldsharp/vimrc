@@ -151,14 +151,20 @@ if ! has('gui_running')
     augroup END
 endif
 
-" -------------- vim-flake8 settings ---------------------------------------
+" ------------------------- vim-flake8 settings ---------------------------- "
 "autocmd FileType python map <buffer> <F6> :call Flake8()<CR>
 "let g:flake8_ignore="E501,W293"
 "let g:flake8_max_line_length=99
 "autocmd BufWritePost *.py call Flake8()
-" -------------- vim-flake8 settings end ----------------------------------
+" ------------------------- vim-flake8 settings end ------------------------ "
 
 set listchars=tab:>-,trail:.,nbsp:%,extends:>,precedes:<
 set list
 
 ":cscope add ./cscope.out
+
+" ------------------------- indentLine setting ----------------------------- "
+let g:indentLine_color_term = 239
+" Can be '¦', '┆' or '│'
+let g:indentLine_char = '¦'
+" ------------------------- indentLine setting end ------------------------- "
