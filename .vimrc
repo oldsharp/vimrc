@@ -107,14 +107,8 @@ if !exists(":DiffOrig")
           \ | wincmd p | diffthis
 endif
 
-nnoremap <silent> <F6> :IndentGuidesToggle<CR>
 nnoremap <silent> <F8> :NERDTreeToggle<CR>
 nnoremap <silent> <F9> :TagbarToggle<CR>
-
-" indent-guides setting GUI custom indent colors
-let g:indent_guides_auto_colors = 1
-"autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=red   ctermbg=4
-"autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=green ctermbg=5
 
 " pathogen enabled.
 execute pathogen#infect()
