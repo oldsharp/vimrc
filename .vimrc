@@ -137,9 +137,9 @@ let g:Powerline_stl_path_style = 'full' "filename, short, relative, full
 let g:Powerline_cache_enabled = 1
 
 " set gui font
-"if has('gui_running')
-"    set guifont=Ubuntu\ Mono\ for\ Powerline\ 13
-"endif
+if has('gui_running')
+    set guifont=Consolas:h12
+endif
 
 " escape the insert mode immediately
 if ! has('gui_running')
