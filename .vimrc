@@ -168,3 +168,8 @@ let g:indentLine_color_term = 239
 " Can be '¦', '┆' or '│'
 let g:indentLine_char = '¦'
 " ------------------------- indentLine setting end ------------------------- "
+
+" ------------------------- vim-markdown setting --------------------------- "
+let g:vim_markdown_folding_disabled=1
+"let g:vim_markdown_initial_foldlevel=1
+" ------------------------- vim-markdown setting end ----------------------- "
