@@ -40,7 +40,7 @@ $ sudo update-alternatives --set vi /usr/bin/vim
 ```
 
 build ycm_support_lib
--------------------------
+---------------------
 
 ```sh
 $ cd ~ && mkdir ycm_build && cd ycm_build
