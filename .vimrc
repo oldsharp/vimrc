@@ -58,7 +58,6 @@ set encoding=UTF-8
 set fileencodings=ucs-bom,UTF-8,cp936,GBK,GB18030,BIG5,euc-jp,euc-kr,latin1
 set fileformats=unix,dos,mac
 
-"set statusline=%F%m%r%h%w\ [FORMAT=%{&ff}]\ [TYPE=%Y]\ [POS=%04l,\ %04v][%03p%%]\ [LEN=%L]
 set laststatus=2
 set noshowmode
 
@@ -143,7 +142,7 @@ let g:Powerline_mode_cs = 'S-BLOCK'
 
 "let g:Powerline_theme = 'solarized256'
 "let g:Powerline_colorscheme = 'solarized256'
-let g:Powerline_stl_path_style = 'full' "filename, short, relative, full
+let g:Powerline_stl_path_style = 'full' " filename, short, relative, full
 let g:Powerline_cache_enabled = 1
 " ------------------------- powerline settings end ------------------------- "
 
