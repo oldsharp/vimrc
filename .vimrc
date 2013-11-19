@@ -5,6 +5,8 @@ set nocompatible
 set helplang=cn
 
 set number
+set wrap
+
 set showcmd     " Show (partial) command in status line.
 set showmatch   " Show matching brackets.
 set ignorecase  " Do case insensitive matching
@@ -13,14 +15,15 @@ set incsearch   " Incremental search
 set autowrite   " Automatically save before commands like :next and :make
 set hidden      " Hide buffers when they are abandoned
 set ruler       " show the cursor position all the time
+
+colorscheme wombat256mod
+
 if has('mouse')
     set mouse=a " Enable mouse usage (all modes)
 endif
 
 set backspace=indent,eol,start
 set history=50
-
-colorscheme wombat256mod
 
 set nobackup
 set nowritebackup
@@ -45,9 +48,9 @@ let python_highlight_all = 1
 let python_version_2 = 1
 syntax enable
 filetype on
-set wrap
 
 autocmd FileType python set cc=80
+
 set foldmethod=manual
 
 " Use ++enc=encoding to cover 'fileencoding' when opening a file
@@ -107,14 +110,21 @@ if !exists(":DiffOrig")
           \ | wincmd p | diffthis
 endif
 
+set listchars=tab:>-,trail:.,nbsp:%,extends:>,precedes:<
+set list
+
+
+":cscope add ./cscope.out
+
 nnoremap <silent> <F8> :NERDTreeToggle<CR>
 nnoremap <silent> <F9> :TagbarToggle<CR>
 
-" pathogen enabled.
+" ------------------------- pathogen settings ------------------------------ "
 execute pathogen#infect()
-
 let g:Powerline_symbols = 'fancy'
+" ------------------------- pathogen settings end -------------------------- "
 
+" ------------------------- powerline settings ----------------------------- "
 "mode                name    default       note ~
 "Normal              n       ' N '         (surrounded by spaces)
 "Insert              i       INSERT
@@ -135,21 +145,7 @@ let g:Powerline_mode_cs = 'S-BLOCK'
 "let g:Powerline_colorscheme = 'solarized256'
 let g:Powerline_stl_path_style = 'full' "filename, short, relative, full
 let g:Powerline_cache_enabled = 1
-
-" set gui font
-if has('gui_running')
-    set guifont=Consolas:h12
-endif
-
-" escape the insert mode immediately
-if ! has('gui_running')
-    set ttimeoutlen=10
-    augroup FastEscape
-        autocmd!
-        au InsertEnter * set timeoutlen=0
-        au InsertLeave * set timeoutlen=1000
-    augroup END
-endif
+" ------------------------- powerline settings end ------------------------- "
 
 " ------------------------- vim-flake8 settings ---------------------------- "
 "autocmd FileType python map <buffer> <F6> :call Flake8()<CR>
@@ -158,10 +154,6 @@ endif
 "autocmd BufWritePost *.py call Flake8()
 " ------------------------- vim-flake8 settings end ------------------------ "
 
-set listchars=tab:>-,trail:.,nbsp:%,extends:>,precedes:<
-set list
-
-":cscope add ./cscope.out
 
 " ------------------------- indentLine setting ----------------------------- "
 let g:indentLine_color_term = 239
