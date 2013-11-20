@@ -13,6 +13,12 @@ $ ln -sf ~/vimcfg/.vimrc ~/.vimrc
 $ ln -sf ~/vimcfg/.vim ~/.vim
 ```
 
+dependency
+----------
+
+ - cmake v2.8 or later: http://www.cmake.org/
+ - flake8: https://pypi.python.org/pypi/flake8/
+
 build vim7.4 from source
 ------------------------
 
