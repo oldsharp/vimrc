@@ -59,8 +59,11 @@ build ycm_support_lib
 ---------------------
 
 ```sh
-# install cmake v2.8 or later
-$ cd ~ && mkdir ycm_build && cd ycm_build
-$ cmake -G 'Unix Makefiles' . ~/.vim/bundle/YouCompleteMe/cpp
-$ make ycm_support_libs
+# Compiling YCM with semantic support for C-family languages:
+cd ~/.vim/bundle/YouCompleteMe
+./install.sh --clang-completer
+
+# Compiling YCM without semantic support for C-family languages:
+cd ~/.vim/bundle/YouCompleteMe
+./install.sh
 ```
