@@ -70,3 +70,8 @@ for example, on ubuntu you need install python-dev
 ```sh
 $ sudo apt-get install python-dev
 ```
+
+LICENSE
+-------
+
+This work has been placed in the public domain.
