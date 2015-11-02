@@ -1,51 +1,57 @@
-vimcfg
-======
+Personal Vim Configuration
+==========================
 
-Personal vim configuration stuff.
 
-usage
+Usage
 -----
 
 ```sh
 $ cd ~ && git clone https://github.com/oldsharp/vimcfg.git
+# WARNING: Init all submodules at once can be EXTREMELY slow; see
+# section 'A Note for YouCompleteMe' below.
 $ cd vimcfg && git submodule update --init --recursive
 $ ln -sf ~/vimcfg/.vimrc ~/.vimrc
 $ ln -sf ~/vimcfg/.vim ~/.vim
+# Optional: You can then run ':Helptags' in Vim to generate help tags
 ```
 
-dependency
+
+Dependency
 ----------
 
- - cmake v2.8 or later: http://www.cmake.org/
- - flake8: https://pypi.python.org/pypi/flake8/
+ - flake8 (for vim-flake8): https://pypi.python.org/pypi/flake8/
 
-build vim7.4 from source
-------------------------
+
+Build Vim 7.4 from Source
+-------------------------
 
 ```sh
+# A possibly progress:
+
 # on debain-like distros:
 $ sudo apt-get install libncurses5-dev libgnome2-dev libgnomeui-dev \
-                       libgtk2.0-dev libatk1.0-dev libbonoboui2-dev \
-                       libcairo2-dev libx11-dev libxpm-dev libxt-dev \
-                       python-dev ruby-dev mercurial
+    libgtk2.0-dev libatk1.0-dev libbonoboui2-dev \
+    libcairo2-dev libx11-dev libxpm-dev libxt-dev \
+    python-dev ruby-dev
 $ sudo apt-get remove vim vim-runtime gvim \
-                      vim-tiny vim-common vim-gui-common
+    vim-tiny vim-common vim-gui-common
 
 # on fedora/CentOS:
 $ sudo yum install libncurses-devel libgnome-devel libx11-devel \
-                   perl-devel python-devel ruby-devel \
-                   perl-ExtUtils-Embed mercurial
+    perl-devel python-devel ruby-devel \
+    perl-ExtUtils-Embed
 $ sudo yum erase vim-common vim-enhanced
 
-$ cd ~ && hg clone https://vim.googlecode.com/hg/ vim && cd vim
-$ ./configure --with-features=huge \
-              --enable-rubyinterp \
-              --enable-pythoninterp \
-              # depend on your system configuration
-              --with-python-config-dir=/usr/lib/python2.7/config \
-              --enable-perlinterp \
-              --enable-luainterp \
-              --enable-gui=gnome2 --enable-cscope --prefix=/usr
+$ cd /path/to/vim-7.4-src
+$ ./configure --prefix=/usr \
+    --with-features=huge \
+    --with-python-config-dir=/usr/lib/python2.7/config \
+    --enable-rubyinterp \
+    --enable-pythoninterp \
+    --enable-perlinterp \
+    --enable-luainterp \
+    --enable-gui=gnome2 \
+    --enable-cscope
 $ make VIMRUNTIMEDIR=/usr/share/vim/vim74
 $ sudo make install
 
@@ -55,21 +61,22 @@ $ sudo update-alternatives --install /usr/bin/vi vi /usr/bin/vim 1
 $ sudo update-alternatives --set vi /usr/bin/vim
 ```
 
-build ycm_support_lib
----------------------
 
-```sh
-# install cmake v2.8 or later
-$ cd ~ && mkdir ycm_build && cd ycm_build
-$ cmake -G 'Unix Makefiles' . ~/.vim/bundle/YouCompleteMe/cpp
-$ make ycm_support_libs
-```
-Comments: 
-if hit something like could not find pythonlibs (missing python_libraries python_include_dirs)",
-for example, on ubuntu you need install python-dev
-```sh
-$ sudo apt-get install python-dev
-```
+A Note for YouCompleteMe
+------------------------
+
+Running `git submodule update --init --recursive .vim/bundle/YouCompleteMe` can be extremely slow if the network is poor, since YCM itself contains a large submodule set.
+
+A workaround: list all the submodules by `git submodule status`, then run `git submodule update --init --recursive <path-to-submodule>` manually - excepting the YCM submodule.  You can then init YCM later whenever you get ready.
+
+To build/install YCM, refer to https://github.com/Valloric/YouCompleteMe#installation
+
+
+A Note for vim-airline Fancy Fonts
+----------------------------------
+
+Refer to https://github.com/bling/vim-airline#integrating-with-powerline-fonts
+
 
 LICENSE
 -------
