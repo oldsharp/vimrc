@@ -7,7 +7,7 @@ Usage
 
 ```sh
 $ cd ~ && git clone https://github.com/oldsharp/vimcfg.git
-# WARNING: Init all submodules at once can be EXTREMELY slow; see
+# WARNING: Init all submodules at once can be _extremely_ slow; see
 # section 'A Note for YouCompleteMe' below.
 $ cd vimcfg && git submodule update --init --recursive
 $ ln -sf ~/vimcfg/.vimrc ~/.vimrc
@@ -65,7 +65,7 @@ $ sudo update-alternatives --set vi /usr/bin/vim
 A Note for YouCompleteMe
 ------------------------
 
-Running `git submodule update --init --recursive .vim/bundle/YouCompleteMe` can be extremely slow if the network is poor, since YCM itself contains a large submodule set.
+Running `git submodule update --init --recursive .vim/bundle/YouCompleteMe` can be _extremely_ slow if the network is poor, since YCM itself contains a large submodule set.
 
 A workaround: list all the submodules by `git submodule status`, then run `git submodule update --init --recursive <path-to-submodule>` manually - excepting the YCM submodule.  You can then init YCM later whenever you get ready.
 
