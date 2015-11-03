@@ -184,7 +184,7 @@ if has("autocmd")
 
 
   " Specified settings for Vim Script.
-  autocmd FileType vim set textwidth=80 softtabstop=2 shiftwidth=2
+  autocmd FileType vim setlocal textwidth=80 softtabstop=2 shiftwidth=2
   autocmd FileType vim let g:indentLine_enabled=1
 
   " Specified settings for markdown file (mkd.markdown).
@@ -192,14 +192,13 @@ if has("autocmd")
   "let g:vim_markdown_initial_foldlevel=1
 
   " Specified settings for Python files.
-  autocmd FileType python set textwidth=80 colorcolumn=+1
+  autocmd FileType python setlocal textwidth=80 colorcolumn=+1
   autocmd FileType python let g:indentLine_enabled=1
   let python_highlight_all=1
   let python_version_2=1
   autocmd FileType python map <buffer> <F6> :call Flake8()<CR>
-  let g:flake8_ignore="E501,W293"
-  let g:flake8_max_line_length=80
   "autocmd BufWritePost *.py call Flake8()
+  autocmd FileType python let b:delimitMate_nesting_quotes = ['"',"'"]
 
 
   " When editing a file, always jump to the last known cursor position.

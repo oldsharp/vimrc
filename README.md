@@ -78,6 +78,12 @@ A Note for vim-airline Fancy Fonts
 Refer to https://github.com/bling/vim-airline#integrating-with-powerline-fonts
 
 
+A Note for vim-flake8 Configure
+-------------------------------
+
+Refer to https://flake8.readthedocs.org/en/latest/config.html
+
+
 LICENSE
 -------
 
