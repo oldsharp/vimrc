@@ -247,5 +247,6 @@ let g:indentLine_color_term=239
 " Can be '¦', '┆' or '│'.
 let g:indentLine_char='│'
 
+
 " Turn on the fancy powerline fonts for airline.
 let g:airline_powerline_fonts=1

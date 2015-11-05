@@ -39,13 +39,14 @@ hi ErrorMsg     ctermfg=196       ctermbg=236       cterm=bold        guifg=#ff2
 
 " Vim >= 7.0 specific colors
 if version >= 700
-hi CursorLine                     ctermbg=236       cterm=none                            guibg=#32322f
-"hi clear CursorLine
-hi CursorLineNR ctermfg=173       ctermbg=234       cterm=none                            guibg=#32322f
-hi MatchParen   ctermfg=228       ctermbg=101       cterm=bold        guifg=#eae788       guibg=#857b6f       gui=bold
-hi Pmenu        ctermfg=230       ctermbg=238                         guifg=#ffffd7       guibg=#444444
-hi PmenuSel     ctermfg=232       ctermbg=192                         guifg=#080808       guibg=#cae982
-hi ColorColumn                    ctermbg=234       cterm=none                            guibg=#32322f
+  hi CursorLine                     ctermbg=236       cterm=none                            guibg=#32322f
+  " Uncomment the line below if you do not want to highlight the whole cursorline.
+  "hi clear CursorLine
+  hi CursorLineNR ctermfg=173       ctermbg=234       cterm=none                            guibg=#32322f
+  hi MatchParen   ctermfg=228       ctermbg=101       cterm=bold        guifg=#eae788       guibg=#857b6f       gui=bold
+  hi Pmenu        ctermfg=230       ctermbg=238                         guifg=#ffffd7       guibg=#444444
+  hi PmenuSel     ctermfg=232       ctermbg=192                         guifg=#080808       guibg=#cae982
+  hi ColorColumn                    ctermbg=234       cterm=none                            guibg=#32322f
 endif
 
 " Diff highlighting
