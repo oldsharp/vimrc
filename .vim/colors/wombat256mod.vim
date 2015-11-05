@@ -90,9 +90,9 @@ hi Type         ctermfg=186                         cterm=none        guifg=#d4d
 hi Special      ctermfg=229                         cterm=none        guifg=#eadead                           gui=none
 autocmd FileType diff highlight Special ctermfg=74
 autocmd FileType gitcommit highlight Special ctermfg=74
-hi String       ctermfg=113                         cterm=none        guifg=#95e454                           gui=italic
-hi Comment      ctermfg=246                         cterm=none        guifg=#9c998e                           gui=italic
-hi Todo         ctermfg=101                         cterm=none        guifg=#857b6f                           gui=italic
+hi String       ctermfg=113                         cterm=italic      guifg=#95e454                           gui=italic
+hi Comment      ctermfg=246                         cterm=italic      guifg=#9c998e                           gui=italic
+hi Todo         ctermfg=101                         cterm=italic      guifg=#857b6f                           gui=italic
 
 " Links
 hi! link FoldColumn     Folded

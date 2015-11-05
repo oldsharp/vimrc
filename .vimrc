@@ -153,6 +153,8 @@ au InsertLeave * set cursorline
 
 " Number of colors of the terminal.
 set t_Co=256
+set t_ZH=[3m
+set t_ZR=[23m
 
 " Switches on syntax highlighting.
 syntax enable

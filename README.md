@@ -84,6 +84,14 @@ A Note for vim-flake8 Configure
 Refer to https://flake8.readthedocs.org/en/latest/config.html
 
 
+Italic Font for Vim Terminal
+----------------------------
+This feature is _experimental_; use with caution.
+Note this feature is heavily rely on the type of terminal you choose.
+Also I tested it under gnu-screen v4.03.01 and after some ugly hacking, finally it worked (with restrictions, though).
+Check https://www.reddit.com/r/vim/comments/24g8r8/italics_in_terminal_vim_and_tmux/ and https://alexpearce.me/2014/05/italics-in-iterm2-vim-tmux/ for additional info.
+
+
 LICENSE
 -------
 
