@@ -148,9 +148,9 @@ set fileformats=unix,dos,mac
 
 
 " Highlight the screen line of the current cursor.
-set cursorline
-au InsertEnter * set nocursorline
-au InsertLeave * set cursorline
+"set cursorline
+"au InsertEnter * set nocursorline
+"au InsertLeave * set cursorline
 
 " Highlight the screen column of the current cursor.
 " Default to off since that's too noisy.  Uncomment lines below to turn
