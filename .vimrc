@@ -191,6 +191,9 @@ if has("autocmd")
   let g:vim_markdown_folding_disabled=1
   "let g:vim_markdown_initial_foldlevel=1
 
+  " Specified settings for gitcommit.
+  autocmd FileType gitcommit setlocal colorcolumn=73
+
   " Specified settings for Python files.
   autocmd FileType python setlocal textwidth=80 colorcolumn=+1
   autocmd FileType python let g:indentLine_enabled=1
