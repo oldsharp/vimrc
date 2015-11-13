@@ -332,7 +332,7 @@ hi Special      ctermfg=229                         cterm=none        guifg=#ead
 autocmd FileType diff highlight Special ctermfg=74
 autocmd FileType gitcommit highlight Special ctermfg=74
 hi String       ctermfg=113                         cterm=none        guifg=#95e454                           gui=italic
-hi Comment      ctermfg=246                         cterm=none        guifg=#9c998e                           gui=italic
+hi Comment      ctermfg=243                         cterm=none        guifg=#9c998e                           gui=italic
 hi Todo         ctermfg=101                         cterm=none        guifg=#857b6f                           gui=italic
 
 " Links
