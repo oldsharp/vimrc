@@ -182,8 +182,11 @@ if has("autocmd")
   " For all text files set 'textwidth' to 78 characters.
   autocmd FileType text setlocal textwidth=72
 
+  " Specified settings for shell script.
+  autocmd FileType sh setlocal textwidth=80 colorcolumn=+1
+  autocmd FileType sh let g:indentLine_enabled=1
 
-  " Specified settings for Vim Script.
+  " Specified settings for Vim script.
   autocmd FileType vim setlocal textwidth=80 softtabstop=2 shiftwidth=2
   autocmd FileType vim let g:indentLine_enabled=1
 
