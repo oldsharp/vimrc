@@ -5,30 +5,30 @@ Personal Vim Configuration
 Usage
 -----
 
+**WARNING**: Init all submodules at once can be *extremely* slow; see section "[A Note for YouCompleteMe](#a-note-for-youcompleteme)" below.
+
 ```sh
 $ cd ~ && git clone https://github.com/oldsharp/vimcfg.git
-# WARNING: Init all submodules at once can be _extremely_ slow; see
-# section 'A Note for YouCompleteMe' below.
 $ cd vimcfg && git submodule update --init --recursive
 $ ln -sf ~/vimcfg/.vimrc ~/.vimrc
 $ ln -sf ~/vimcfg/.vim ~/.vim
-# Optional: You can then run ':Helptags' in Vim to generate help tags
+# Optional: You can then run ':Helptags' inside Vim to generating help tags.
 ```
 
 
 Dependency
 ----------
 
- - flake8 (for vim-flake8): https://pypi.python.org/pypi/flake8/
+ - [flake8](https://pypi.python.org/pypi/flake8/) (for vim-flake8).
 
 
-Build Vim 7.4 from Source
--------------------------
+Building Vim 7.4 from Source
+----------------------------
 
 ```sh
-# A possibly progress:
+# A possible routine:
 
-# on debain-like distros:
+# On debain-like distros:
 $ sudo apt-get install libncurses5-dev libgnome2-dev libgnomeui-dev \
     libgtk2.0-dev libatk1.0-dev libbonoboui2-dev \
     libcairo2-dev libx11-dev libxpm-dev libxt-dev \
@@ -36,7 +36,7 @@ $ sudo apt-get install libncurses5-dev libgnome2-dev libgnomeui-dev \
 $ sudo apt-get remove vim vim-runtime gvim \
     vim-tiny vim-common vim-gui-common
 
-# on fedora/CentOS:
+# On fedora/CentOS:
 $ sudo yum install libncurses-devel libgnome-devel libx11-devel \
     perl-devel python-devel ruby-devel \
     perl-ExtUtils-Embed
@@ -65,26 +65,26 @@ $ sudo update-alternatives --set vi /usr/bin/vim
 A Note for YouCompleteMe
 ------------------------
 
-Running `git submodule update --init --recursive .vim/bundle/YouCompleteMe` can be _extremely_ slow if the network is poor, since YCM itself contains a large submodule set.
+Running `git submodule update --init --recursive .vim/bundle/YouCompleteMe` can be *extremely* slow if the network is poor, since YCM itself contains a large submodule set.
 
-A workaround: list all the submodules by `git submodule status`, then run `git submodule update --init --recursive <path-to-submodule>` manually - excepting the YCM submodule.  You can then init YCM later whenever you get ready.
+A possible workaround: list all the submodules by `git submodule status`, then run `git submodule update --init --recursive <path-to-submodule>` manually - excepting the YCM submodule.  You can then init YCM later whenever you get ready.
 
-To build/install YCM, refer to https://github.com/Valloric/YouCompleteMe#installation
+To build/install YCM, refer to the [official doc](https://github.com/Valloric/YouCompleteMe/blob/master/README.md#installation).
 
 
 A Note for vim-airline Fancy Fonts
 ----------------------------------
 
-Refer to https://github.com/bling/vim-airline#integrating-with-powerline-fonts
+Refer to the [official instruction](https://github.com/bling/vim-airline#integrating-with-powerline-fonts).
 
 
 A Note for vim-flake8 Configure
 -------------------------------
 
-Refer to https://flake8.readthedocs.org/en/latest/config.html
+Refer to flake8's [official doc](https://flake8.readthedocs.org/en/latest/config.html).
 
 
-LICENSE
+License
 -------
 
 This work has been placed in the public domain.
