@@ -330,6 +330,7 @@ hi Identifier   ctermfg=192                         cterm=none        guifg=#cae
 hi Type         ctermfg=186                         cterm=none        guifg=#d4d987                           gui=none
 hi Special      ctermfg=229                         cterm=none        guifg=#eadead                           gui=none
 autocmd FileType diff highlight Special ctermfg=74
+autocmd FileType git highlight Special ctermfg=74
 autocmd FileType gitcommit highlight Special ctermfg=74
 hi String       ctermfg=113                         cterm=none        guifg=#95e454                           gui=italic
 hi Comment      ctermfg=243                         cterm=none        guifg=#9c998e                           gui=italic
