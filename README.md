@@ -8,10 +8,10 @@ Usage
 **WARNING**: Init all submodules at once can be *extremely* slow; see section "[A Note for YouCompleteMe](#a-note-for-youcompleteme)" below.
 
 ```sh
-$ cd ~ && git clone https://github.com/oldsharp/vimcfg.git
-$ cd vimcfg && git submodule update --init --recursive
-$ ln -sf ~/vimcfg/.vimrc ~/.vimrc
-$ ln -sf ~/vimcfg/.vim ~/.vim
+$ git clone https://github.com/oldsharp/vimrc.git
+$ cd vimrc && git submodule update --init --recursive
+$ ln -sf /path/to/vimrc/.vimrc ~/.vimrc
+$ ln -sf /path/to/vimrc/.vim ~/.vim
 # Optional: You can then run ':Helptags' inside Vim to generating help tags.
 ```
 
