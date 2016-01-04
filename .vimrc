@@ -196,6 +196,7 @@ if has("autocmd")
 
   " Specified settings for gitcommit.
   autocmd FileType gitcommit setlocal colorcolumn=73
+  autocmd FileType gitcommit setlocal spell spelllang=en_us
 
   " Specified settings for Python files.
   autocmd FileType python setlocal textwidth=80 colorcolumn=+1
