@@ -307,9 +307,9 @@ hi DiffChange                     ctermbg=237                                   
 "hi Question
 "hi Scrollbar
 "hi SignColumn
-"hi SpellBad
+hi SpellBad     ctermfg=231       ctermbg=131       cterm=none        guifg=#d787ff       guibg=#636066       gui=none
 "hi SpellCap
-"hi SpellLocal
+hi SpellLocal   ctermfg=231       ctermbg=132       cterm=none        guifg=#d787ff       guibg=#636066       gui=none
 "hi SpellRare
 "hi TabLine
 "hi TabLineFill
