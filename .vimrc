@@ -3,7 +3,7 @@
 " https://gist.github.com/oldsharp/a29856efac8f4dd974ce
 "
 " Author: Ray Chen <oldsharp@gmail.com>
-" License: This file has been placed in the public domain.
+" License: Public Domain
 "
 " NOTE: Use ':source $MYVIMRC' to reload '.vimrc'.
 
