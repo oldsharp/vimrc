@@ -216,7 +216,7 @@ if has("autocmd")
   autocmd FileType python let g:indentLine_enabled=1
   let python_highlight_all=1
   let python_version_2=1
-  autocmd FileType python map <buffer> <F6> :call Flake8()<CR>
+  "autocmd FileType python map <buffer> <F6> :call Flake8()<CR>
   "autocmd BufWritePost *.py call Flake8()
   autocmd FileType python let b:delimitMate_nesting_quotes = ['"',"'"]
 
