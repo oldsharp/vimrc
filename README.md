@@ -69,6 +69,13 @@ Running `git submodule update --init --recursive .vim/bundle/YouCompleteMe` can 
 
 A possible workaround: list all the submodules by `git submodule status`, then run `git submodule update --init --recursive <path-to-submodule>` manually - excepting the YCM submodule.  You can then init YCM later whenever you get ready.
 
+To update YCM, do *not* update with `--recursive` option first; a possible (and safe) way:
+
+  1. Unregister YCM by running `git submodule deinit .vim/bundle/YouCompleteMe` if necessary.
+  2. Update YCM by `git submodule update --remote .vim/bundle/YouCompleteMe`.  Set `--init` option if necessary.
+  3. Commit the change made in step 2.
+  4. Run `git submodule update --init --recursive .vim/bundle/YouCompleteMe` to register and checkout all submodules inside YCM recursively.
+
 To build/install YCM, refer to the [official doc](https://github.com/Valloric/YouCompleteMe/blob/master/README.md#installation).
 
 
