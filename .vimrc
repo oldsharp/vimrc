@@ -264,5 +264,16 @@ let g:indentLine_color_term=239
 let g:indentLine_char='│'
 
 
-" Turn on the fancy powerline fonts for airline.
-let g:airline_powerline_fonts=1
+" Turn off the fancy powerline fonts for airline.
+let g:airline_powerline_fonts=0
+" Unicode symbols for airline.  See :help airline.
+if !exists('g:airline_symbols')
+  let g:airline_symbols={}
+endif
+let g:airline_left_sep='>'
+let g:airline_left_alt_sep='>'
+let g:airline_right_sep='<'
+let g:airline_right_alt_sep='<'
+let g:airline_symbols.linenr='§'
+let g:airline_symbols.branch='⎇ '
+let g:airline_symbols.whitespace='Ξ'
