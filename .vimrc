@@ -277,3 +277,7 @@ let g:airline_right_alt_sep='<'
 let g:airline_symbols.linenr='§'
 let g:airline_symbols.branch='⎇ '
 let g:airline_symbols.whitespace='Ξ'
+
+
+" Set'let g:loaded_youcompleteme=1' to stop loading YCM at start.
+"let g:loaded_youcompleteme=1
