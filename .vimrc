@@ -54,6 +54,15 @@ set ruler
 " displaying continues on the next line.
 set wrap
 
+
+" Maximum column in which to search for syntax items.  In long lines the
+" text after this column is not highlighted and following lines may not
+" be highlighted correctly, because the syntax state is cleared.
+" This helps to avoid very slow redrawing for an XML file that is one
+" long line.
+" Set to zero to remove the limit (default 3000).
+set synmaxcol=0
+
 " Influences the working of <BS>, <Del>, CTRL-W and CTRL-U in Insert
 " mode.
 set backspace=indent,eol,start
