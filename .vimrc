@@ -187,36 +187,31 @@ if has("autocmd")
   augroup vimrcEx
   au!
 
-
-  " For all text files set 'textwidth' to 78 characters.
+  " For all text files set 'textwidth' to 72 characters.
   autocmd FileType text setlocal textwidth=72
 
-  " Specified settings for mail.
+  " Specific settings for gitcommit filetype.
+  autocmd FileType gitcommit setlocal textwidth=72 colorcolumn=+1
+  autocmd FileType gitcommit setlocal spell spelllang=en_us
+
+  " Specific settings for golang filetype.
+  autocmd FileType go setlocal textwidth=80 colorcolumn=+1
+  autocmd FileType go let g:indentLine_enabled=1"
+
+  " Specific settings for javascript filetype.
+  autocmd FileType javascript setlocal textwidth=80 colorcolumn=+1
+  autocmd FileType javascript setlocal softtabstop=2 shiftwidth=2
+  autocmd FileType javascript let g:indentLine_enabled=1"
+
+  " Specific settings for mail filetype.
   autocmd FileType mail setlocal textwidth=72 colorcolumn=+1
 
-  " Specified settings for shell script.
-  autocmd FileType sh setlocal textwidth=80 colorcolumn=+1
-  autocmd FileType sh let g:indentLine_enabled=1
-
-  " Specified settings for Vim script.
-  autocmd FileType vim setlocal textwidth=80 colorcolumn=+1
-  autocmd FileType vim setlocal softtabstop=2 shiftwidth=2
-  autocmd FileType vim let g:indentLine_enabled=1
-
-  " Specified settings for markdown file (mkd.markdown).
+  " Specific settings for markdown filetype.
+  autocmd FileType markdown setlocal textwidth=72 colorcolumn=+1
   let g:vim_markdown_folding_disabled=1
   "let g:vim_markdown_initial_foldlevel=1
 
-  " Specified settings for gitcommit.
-  autocmd FileType gitcommit setlocal textwidth=72 colorcolumn=73
-  autocmd FileType gitcommit setlocal spell spelllang=en_us
-
-  " Specified settings for yaml file.
-  autocmd FileType yaml setlocal textwidth=80 colorcolumn=+1
-  autocmd FileType yaml setlocal softtabstop=2 shiftwidth=2
-  autocmd FileType yaml let g:indentLine_enabled=1
-
-  " Specified settings for Python files.
+  " Specific settings for python filetype.
   autocmd FileType python setlocal textwidth=80 colorcolumn=+1
   autocmd FileType python let g:indentLine_enabled=1
   let python_highlight_all=1
@@ -225,6 +220,24 @@ if has("autocmd")
   "autocmd BufWritePost *.py call Flake8()
   autocmd FileType python let b:delimitMate_nesting_quotes = ['"',"'"]
 
+  " Specific settings for ruby filetype.
+  autocmd FileType ruby setlocal textwidth=80 colorcolumn=+1
+  autocmd FileType ruby setlocal softtabstop=2 shiftwidth=2
+  autocmd FileType ruby let g:indentLine_enabled=1
+
+  " Specific settings for sh filetype.
+  autocmd FileType sh setlocal textwidth=80 colorcolumn=+1
+  autocmd FileType sh let g:indentLine_enabled=1
+
+  " Specific settings for vim filetype.
+  autocmd FileType vim setlocal textwidth=80 colorcolumn=+1
+  autocmd FileType vim setlocal softtabstop=2 shiftwidth=2
+  autocmd FileType vim let g:indentLine_enabled=1
+
+  " Specific settings for yaml filetype.
+  autocmd FileType yaml setlocal textwidth=80 colorcolumn=+1
+  autocmd FileType yaml setlocal softtabstop=2 shiftwidth=2
+  autocmd FileType yaml let g:indentLine_enabled=1
 
   " When editing a file, always jump to the last known cursor position.
   " Don't do it when the position is invalid or when inside an event
