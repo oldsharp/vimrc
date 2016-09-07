@@ -229,6 +229,11 @@ if has("autocmd")
   autocmd FileType sh setlocal textwidth=80 colorcolumn=+1
   autocmd FileType sh let g:indentLine_enabled=1
 
+  " Specific settings for solidity filetype.
+  autocmd FileType solidity setlocal textwidth=80 colorcolumn=+1
+  autocmd FileType solidity setlocal softtabstop=2 shiftwidth=2
+  autocmd FileType solidity let g:indentLine_enabled=1
+
   " Specific settings for vim filetype.
   autocmd FileType vim setlocal textwidth=80 colorcolumn=+1
   autocmd FileType vim setlocal softtabstop=2 shiftwidth=2
