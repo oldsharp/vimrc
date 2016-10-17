@@ -203,6 +203,12 @@ if has("autocmd")
   autocmd FileType javascript setlocal softtabstop=2 shiftwidth=2
   autocmd FileType javascript let g:indentLine_enabled=1"
 
+  " Specific settings for json filetype.
+  autocmd FileType json setlocal textwidth=80 colorcolumn=+1
+  autocmd FileType json setlocal softtabstop=2 shiftwidth=2
+  autocmd FileType json setlocal conceallevel=2
+  autocmd FileType json let g:indentLine_enabled=1
+
   " Specific settings for mail filetype.
   autocmd FileType mail setlocal textwidth=72 colorcolumn=+1
 
