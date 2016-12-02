@@ -191,34 +191,34 @@ if has("autocmd")
   autocmd FileType text setlocal textwidth=72
 
   " Specific settings for gitcommit filetype.
-  autocmd FileType gitcommit setlocal textwidth=72 colorcolumn=+1
+  autocmd FileType gitcommit setlocal textwidth=72 colorcolumn=72
   autocmd FileType gitcommit setlocal spell spelllang=en_us
 
   " Specific settings for golang filetype.
-  autocmd FileType go setlocal textwidth=80 colorcolumn=+1
+  autocmd FileType go setlocal textwidth=80 colorcolumn=80
   autocmd FileType go let g:indentLine_enabled=1"
 
   " Specific settings for javascript filetype.
-  autocmd FileType javascript setlocal textwidth=80 colorcolumn=+1
+  autocmd FileType javascript setlocal textwidth=80 colorcolumn=80
   autocmd FileType javascript setlocal softtabstop=2 shiftwidth=2
   autocmd FileType javascript let g:indentLine_enabled=1"
 
   " Specific settings for json filetype.
-  autocmd FileType json setlocal textwidth=80 colorcolumn=+1
+  autocmd FileType json setlocal textwidth=80 colorcolumn=80
   autocmd FileType json setlocal softtabstop=2 shiftwidth=2
   autocmd FileType json setlocal conceallevel=2
   autocmd FileType json let g:indentLine_enabled=1
 
   " Specific settings for mail filetype.
-  autocmd FileType mail setlocal textwidth=72 colorcolumn=+1
+  autocmd FileType mail setlocal textwidth=72 colorcolumn=72
 
   " Specific settings for markdown filetype.
-  autocmd FileType markdown setlocal textwidth=72 colorcolumn=+1
+  autocmd FileType markdown setlocal textwidth=72 colorcolumn=72
   let g:vim_markdown_folding_disabled=1
   "let g:vim_markdown_initial_foldlevel=1
 
   " Specific settings for python filetype.
-  autocmd FileType python setlocal textwidth=80 colorcolumn=+1
+  autocmd FileType python setlocal textwidth=80 colorcolumn=80
   autocmd FileType python let g:indentLine_enabled=1
   let python_highlight_all=1
   let python_version_2=1
@@ -227,26 +227,26 @@ if has("autocmd")
   autocmd FileType python let b:delimitMate_nesting_quotes = ['"',"'"]
 
   " Specific settings for ruby filetype.
-  autocmd FileType ruby setlocal textwidth=80 colorcolumn=+1
+  autocmd FileType ruby setlocal textwidth=80 colorcolumn=80
   autocmd FileType ruby setlocal softtabstop=2 shiftwidth=2
   autocmd FileType ruby let g:indentLine_enabled=1
 
   " Specific settings for sh filetype.
-  autocmd FileType sh setlocal textwidth=80 colorcolumn=+1
+  autocmd FileType sh setlocal textwidth=80 colorcolumn=80
   autocmd FileType sh let g:indentLine_enabled=1
 
   " Specific settings for solidity filetype.
-  autocmd FileType solidity setlocal textwidth=80 colorcolumn=+1
+  autocmd FileType solidity setlocal textwidth=80 colorcolumn=80
   autocmd FileType solidity setlocal softtabstop=2 shiftwidth=2
   autocmd FileType solidity let g:indentLine_enabled=1
 
   " Specific settings for vim filetype.
-  autocmd FileType vim setlocal textwidth=80 colorcolumn=+1
+  autocmd FileType vim setlocal textwidth=80 colorcolumn=80
   autocmd FileType vim setlocal softtabstop=2 shiftwidth=2
   autocmd FileType vim let g:indentLine_enabled=1
 
   " Specific settings for yaml filetype.
-  autocmd FileType yaml setlocal textwidth=80 colorcolumn=+1
+  autocmd FileType yaml setlocal textwidth=80 colorcolumn=80
   autocmd FileType yaml setlocal softtabstop=2 shiftwidth=2
   autocmd FileType yaml let g:indentLine_enabled=1
 
