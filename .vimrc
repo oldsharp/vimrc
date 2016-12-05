@@ -195,7 +195,8 @@ if has("autocmd")
   autocmd FileType gitcommit setlocal spell spelllang=en_us
 
   " Specific settings for golang filetype.
-  autocmd FileType go setlocal textwidth=80 colorcolumn=80
+  autocmd FileType go setlocal textwidth=0 colorcolumn=80
+  autocmd FileType go setlocal ts=8 noet sts=0 sw=8 nosta
   autocmd FileType go let g:indentLine_enabled=1"
 
   " Specific settings for javascript filetype.
