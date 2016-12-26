@@ -194,6 +194,9 @@ if has("autocmd")
   autocmd FileType gitcommit setlocal textwidth=72 colorcolumn=72
   autocmd FileType gitcommit setlocal spell spelllang=en_us
 
+  " Specific settings for gitconfig filetype.
+  autocmd FileType gitconfig setlocal ts=8 noet sts=0 sw=8 nosta
+
   " Specific settings for golang filetype.
   autocmd FileType go setlocal textwidth=0 colorcolumn=80
   autocmd FileType go setlocal ts=8 noet sts=0 sw=8 nosta
