@@ -28,3 +28,6 @@
 [submodule ".vim/bundle/vim-solidity"]
 	path = vim/bundle/vim-solidity
 	url = https://github.com/tomlion/vim-solidity.git
+[submodule "vim/bundle/csapprox"]
+	path = vim/bundle/csapprox
+	url = https://github.com/godlygeek/csapprox.git
