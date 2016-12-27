@@ -15,9 +15,6 @@ set nocompatible
 
 colorscheme wombat256mod
 
-" Uncomment line below to use Help Pages with zh-CN.
-"set helplang=cn
-
 " Enable mouse usage (all modes).
 if has('mouse')
   set mouse=a
