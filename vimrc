@@ -127,7 +127,7 @@ set smarttab
 " This block of settings control the coding behavior of Vim.
 
 " Sets the character encoding used inside Vim.
-set encoding=UTF-8
+set encoding=utf-8
 
 " A list of character encodings considered when starting to edit an
 " existing file.  When a file is read, Vim tries to use the first
@@ -136,7 +136,7 @@ set encoding=UTF-8
 " 'fileencoding' is set to it.  If all fail, 'fileencoding' is set to
 " an empty string, which means the value of 'encoding' is used.
 " Note: Use ++enc=encoding to cover 'fileencoding' when opening a file.
-set fileencodings=ucs-bom,UTF-8,cp936,GBK,GB18030,BIG5,euc-jp,euc-kr,latin1
+set fileencodings=ucs-bom,utf-8,prc,gb18030,taiwan,japan,korea,latin1
 
 " Gives the end-of-line (<EOL>) formats that will be tried when
 " starting to edit a new buffer and when reading a file into an
