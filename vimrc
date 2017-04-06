@@ -197,12 +197,12 @@ if has("autocmd")
   " Specific settings for golang filetype.
   autocmd FileType go setlocal textwidth=0 colorcolumn=80
   autocmd FileType go setlocal ts=8 noet sts=0 sw=8 nosta
-  autocmd FileType go let g:indentLine_enabled=1"
+  autocmd FileType go let g:indentLine_enabled=1
 
   " Specific settings for javascript filetype.
   autocmd FileType javascript setlocal textwidth=80 colorcolumn=80
   autocmd FileType javascript setlocal softtabstop=2 shiftwidth=2
-  autocmd FileType javascript let g:indentLine_enabled=1"
+  autocmd FileType javascript let g:indentLine_enabled=1
 
   " Specific settings for json filetype.
   autocmd FileType json setlocal textwidth=80 colorcolumn=80
