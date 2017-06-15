@@ -25,9 +25,6 @@
 [submodule ".vim/bundle/vim-airline"]
 	path = vim/bundle/vim-airline
 	url = https://github.com/bling/vim-airline.git
-[submodule ".vim/bundle/vim-solidity"]
-	path = vim/bundle/vim-solidity
-	url = https://github.com/tomlion/vim-solidity.git
 [submodule "vim/bundle/csapprox"]
 	path = vim/bundle/csapprox
 	url = https://github.com/godlygeek/csapprox.git
