@@ -187,6 +187,16 @@ if has("autocmd")
   " For all text files set 'textwidth' to 72 characters.
   autocmd FileType text setlocal textwidth=72
 
+  " Specific settings for c filetype.
+  autocmd FileType c setlocal textwidth=0 colorcolumn=80
+  autocmd FileType c setlocal ts=8 noet sts=0 sw=8 nosta
+  autocmd FileType c let g:indentLine_enabled=1
+
+  " Specific settings for cpp filetype.
+  autocmd FileType cpp setlocal textwidth=0 colorcolumn=120
+  "autocmd FileType cpp setlocal ts=8 noet sts=0 sw=8 nosta
+  autocmd FileType cpp let g:indentLine_enabled=1
+
   " Specific settings for gitcommit filetype.
   autocmd FileType gitcommit setlocal textwidth=72 colorcolumn=72
   autocmd FileType gitcommit setlocal spell spelllang=en_us
@@ -198,6 +208,11 @@ if has("autocmd")
   autocmd FileType go setlocal textwidth=0 colorcolumn=80
   autocmd FileType go setlocal ts=8 noet sts=0 sw=8 nosta
   autocmd FileType go let g:indentLine_enabled=1
+
+  " Specific settings for java filetype.
+  autocmd FileType java setlocal textwidth=120 colorcolumn=120
+  autocmd FileType java setlocal softtabstop=4 shiftwidth=4
+  autocmd FileType java let g:indentLine_enabled=1
 
   " Specific settings for javascript filetype.
   autocmd FileType javascript setlocal textwidth=80 colorcolumn=80
@@ -245,6 +260,11 @@ if has("autocmd")
   autocmd FileType vim setlocal textwidth=80 colorcolumn=80
   autocmd FileType vim setlocal softtabstop=2 shiftwidth=2
   autocmd FileType vim let g:indentLine_enabled=1
+
+  " Specific settings for xml filetype.
+  autocmd FileType xml setlocal textwidth=80 colorcolumn=80
+  autocmd FileType xml setlocal softtabstop=2 shiftwidth=2
+  autocmd FileType xml let g:indentLine_enabled=1
 
   " Specific settings for yaml filetype.
   autocmd FileType yaml setlocal textwidth=80 colorcolumn=80
@@ -316,3 +336,4 @@ let g:airline_symbols.whitespace='Ξ'
 
 " Set'let g:loaded_youcompleteme=1' to stop loading YCM at start.
 "let g:loaded_youcompleteme=1
+let g:ycm_confirm_extra_conf=0
