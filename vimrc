@@ -193,8 +193,8 @@ if has("autocmd")
   autocmd FileType c let g:indentLine_enabled=1
 
   " Specific settings for cpp filetype.
-  autocmd FileType cpp setlocal textwidth=0 colorcolumn=120
-  "autocmd FileType cpp setlocal ts=8 noet sts=0 sw=8 nosta
+  autocmd FileType cpp setlocal textwidth=0 colorcolumn=80
+  autocmd FileType cpp setlocal softtabstop=2 shiftwidth=2
   autocmd FileType cpp let g:indentLine_enabled=1
 
   " Specific settings for gitcommit filetype.
