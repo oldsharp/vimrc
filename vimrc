@@ -190,12 +190,10 @@ if has("autocmd")
   " Specific settings for c filetype.
   autocmd FileType c setlocal textwidth=0 colorcolumn=80
   autocmd FileType c setlocal ts=8 noet sts=0 sw=8 nosta
-  autocmd FileType c let g:indentLine_enabled=1
 
   " Specific settings for cpp filetype.
   autocmd FileType cpp setlocal textwidth=0 colorcolumn=80
   autocmd FileType cpp setlocal softtabstop=2 shiftwidth=2
-  autocmd FileType cpp let g:indentLine_enabled=1
 
   " Specific settings for gitcommit filetype.
   autocmd FileType gitcommit setlocal textwidth=72 colorcolumn=72
@@ -207,23 +205,19 @@ if has("autocmd")
   " Specific settings for golang filetype.
   autocmd FileType go setlocal textwidth=0 colorcolumn=80
   autocmd FileType go setlocal ts=8 noet sts=0 sw=8 nosta
-  autocmd FileType go let g:indentLine_enabled=1
 
   " Specific settings for java filetype.
   autocmd FileType java setlocal textwidth=120 colorcolumn=120
   autocmd FileType java setlocal softtabstop=4 shiftwidth=4
-  autocmd FileType java let g:indentLine_enabled=1
 
   " Specific settings for javascript filetype.
   autocmd FileType javascript setlocal textwidth=80 colorcolumn=80
   autocmd FileType javascript setlocal softtabstop=2 shiftwidth=2
-  autocmd FileType javascript let g:indentLine_enabled=1
 
   " Specific settings for json filetype.
   autocmd FileType json setlocal textwidth=80 colorcolumn=80
   autocmd FileType json setlocal softtabstop=2 shiftwidth=2
   autocmd FileType json setlocal conceallevel=2
-  autocmd FileType json let g:indentLine_enabled=1
 
   " Specific settings for mail filetype.
   autocmd FileType mail setlocal textwidth=72 colorcolumn=72
@@ -235,7 +229,6 @@ if has("autocmd")
 
   " Specific settings for python filetype.
   autocmd FileType python setlocal textwidth=80 colorcolumn=80
-  autocmd FileType python let g:indentLine_enabled=1
   let python_highlight_all=1
   let python_version_2=1
   "autocmd FileType python map <buffer> <F6> :call Flake8()<CR>
@@ -245,31 +238,25 @@ if has("autocmd")
   " Specific settings for ruby filetype.
   autocmd FileType ruby setlocal textwidth=80 colorcolumn=80
   autocmd FileType ruby setlocal softtabstop=2 shiftwidth=2
-  autocmd FileType ruby let g:indentLine_enabled=1
 
   " Specific settings for sh filetype.
   autocmd FileType sh setlocal textwidth=80 colorcolumn=80
-  autocmd FileType sh let g:indentLine_enabled=1
 
   " Specific settings for solidity filetype.
   autocmd FileType solidity setlocal textwidth=80 colorcolumn=80
   autocmd FileType solidity setlocal softtabstop=2 shiftwidth=2
-  autocmd FileType solidity let g:indentLine_enabled=1
 
   " Specific settings for vim filetype.
   autocmd FileType vim setlocal textwidth=80 colorcolumn=80
   autocmd FileType vim setlocal softtabstop=2 shiftwidth=2
-  autocmd FileType vim let g:indentLine_enabled=1
 
   " Specific settings for xml filetype.
   autocmd FileType xml setlocal textwidth=80 colorcolumn=80
   autocmd FileType xml setlocal softtabstop=2 shiftwidth=2
-  autocmd FileType xml let g:indentLine_enabled=1
 
   " Specific settings for yaml filetype.
   autocmd FileType yaml setlocal textwidth=80 colorcolumn=80
   autocmd FileType yaml setlocal softtabstop=2 shiftwidth=2
-  autocmd FileType yaml let g:indentLine_enabled=1
 
   " When editing a file, always jump to the last known cursor position.
   " Don't do it when the position is invalid or when inside an event
@@ -314,7 +301,7 @@ nnoremap <silent> <F9> :TagbarToggle<CR>
 " Turn off indentLine by default.
 let g:indentLine_enabled=0
 let g:indentLine_color_term=239
-" Can be '¦', '┆' or '│'.
+" Can be '¦', '┆', '┊' or '│'.
 let g:indentLine_char='│'
 
 
