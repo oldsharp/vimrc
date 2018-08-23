@@ -323,6 +323,10 @@ let g:airline_symbols.linenr='§'
 let g:airline_symbols.branch='⎇ '
 let g:airline_symbols.whitespace='Ξ'
 
+" Certain number of spaces are allowed after tabs, but not in between
+" this algorithm works well for /** */ style comments in a tab-indented file.
+let g:airline#extensions#whitespace#mixed_indent_algo=1
+
 
 " Set'let g:loaded_youcompleteme=1' to stop loading YCM at start.
 "let g:loaded_youcompleteme=1
