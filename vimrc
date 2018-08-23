@@ -220,7 +220,6 @@ if has("autocmd")
   " Specific settings for json filetype.
   autocmd FileType json setlocal textwidth=80 colorcolumn=80
   autocmd FileType json setlocal softtabstop=2 shiftwidth=2
-  autocmd FileType json setlocal conceallevel=2
 
   " Specific settings for mail filetype.
   autocmd FileType mail setlocal textwidth=72 colorcolumn=72
