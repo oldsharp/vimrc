@@ -191,6 +191,9 @@ if has("autocmd")
   autocmd FileType c setlocal textwidth=0 colorcolumn=80
   autocmd FileType c setlocal ts=8 noet sts=0 sw=8 nosta
 
+  " Specific settings for cmake filetype.
+  autocmd FileType cmake setlocal textwidth=120 colorcolumn=120
+
   " Specific settings for cpp filetype.
   autocmd FileType cpp setlocal textwidth=0 colorcolumn=80
   autocmd FileType cpp setlocal softtabstop=2 shiftwidth=2
