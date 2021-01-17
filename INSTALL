@@ -1,0 +1,1 @@
+Put .vimrc and .vim/ into ~, then run :helptags.
