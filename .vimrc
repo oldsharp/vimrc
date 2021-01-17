@@ -1,10 +1,9 @@
-" A Vim configure file with fancy features.
-" For a lightweighted version, see
-" https://gist.github.com/oldsharp/a29856efac8f4dd974ce
+"A lightweighted VIM profile for 256-colour terminal and VIM 7.4+.
 "
-" Author: Ray Chen <oldsharp@gmail.com>
-" License: Public domain
-
+" - colorscheme: seoul256/solarized8
+" - airline with ascii chars and themes=seoul256
+" - fugitive
+"
 " NOTE: Use ':source $MYVIMRC' to reload '.vimrc'.
 
 
